@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-<!-- BEGIN Main Container col2-right -->
+    <!-- BEGIN Main Container col2-right -->
         <div class="main-container col2-right-layout">
             <div class="main container">
                 <div class="row">
@@ -144,7 +144,6 @@
                                 </fieldset>
                             </div>
                         </form>
-
                     </div>
                     @include('common/terms_of_service')
                     <!--col-right sidebar-->
@@ -154,9 +153,6 @@
             <!--main-container-inner-->
         </div>
         <!--main-container col2-left-layout-->
-
-
-
     </div>
 <script>
     $(document).ready(function(){

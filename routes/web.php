@@ -39,8 +39,8 @@ use Illuminate\Contracts\Auth\Access\Gate;
 
 //Default Routes
     Auth::routes();
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    /*Route::get('/', [App\Http\Controllers\HomeController::class, 'loginPage'])->name('default');*/
+    //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'loginPage'])->name('default');
 
 //Tests
     Route::get('/test', function () {

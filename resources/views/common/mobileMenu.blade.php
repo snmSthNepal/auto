@@ -1,17 +1,5 @@
 <div id="mobile-menu">
         <ul>
-            <li>
-                <div class="mm-search">
-                    <form id="search1" name="search">
-                        <div class="input-group">
-                            <div class="input-group-btn">
-                                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i> </button>
-                            </div>
-                            <input type="text" class="form-control simple" placeholder="Search ..." name="srch-term" id="srch-term">
-                        </div>
-                    </form>
-                </div>
-            </li>
             <li class="active"> <a class="level-top" href="/"><span>Home</span></a></li>
             <li class="active"> <a class="level-top" href="service"><span>Servicing</span></a></li>
             <li class="active"> <a class="level-top" href="evaluate"><span>Evaluate</span></a></li>

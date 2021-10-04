@@ -150,9 +150,9 @@
         </div>
         <!-- Evaluate Content Finished -->
     </div>
-<script>
-    $(document).ready(function(){
-        $('.btnValidate').addClass('w3-blue');
-    });
-</script>
+        <script>
+            $(document).ready(function(){
+                $('.btnValidate').addClass('w3-blue');
+            });
+        </script>
     @endsection
