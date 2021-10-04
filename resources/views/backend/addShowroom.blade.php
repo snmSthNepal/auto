@@ -161,6 +161,10 @@
         </div>
 
         <!--Add Showroom Content Finished-->
-
+        <script>
+            $(document).ready(function(){
+                $('.btnConfig').addClass('w3-blue');
+            });
+        </script>
     @endsection
 

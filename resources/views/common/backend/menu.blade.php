@@ -50,12 +50,12 @@
             <br>
 
             <!--Servicing Capacity Configuration-->
-            <a href="getShowroom" role="button" class="w3-bar-item w3-button w3-padding hide">
+            <a href="getShowroom" role="button" class="w3-bar-item w3-button w3-padding btnConfig">
                 <i class="fa fa-gears fa-fw"></i>&nbsp; <b>Configure Showroom</b>
             </a>
             
             <!--Validate New Showrooms-->
-            <a href="validateShowroom" role="button" class="w3-bar-item w3-button w3-padding">
+            <a href="validateShowroom" role="button" class="w3-bar-item w3-button w3-padding btnValidate">
                 <i class="fa fa-gears fa-fw"></i>&nbsp; <b>Validate Showroom</b>
             </a>
         @elseif(Auth::User()->userType=="business")
@@ -71,7 +71,7 @@
                 <i class="fa fa-gears fa-fw"></i>&nbsp; Service Records
             </a>
             <!--Servicing Capacity Configuration-->
-            <a href="getShowroom" role="button" class="w3-bar-item w3-button w3-padding">
+            <a href="getShowroom" role="button" class="w3-bar-item w3-button w3-padding btnConfig">
                 <i class="fa fa-gears fa-fw"></i>&nbsp; <b>Configure Showroom</b>
             </a>
         @elseif(Auth::User()->userType=="personal")

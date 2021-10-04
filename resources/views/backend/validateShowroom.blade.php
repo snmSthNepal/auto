@@ -93,6 +93,7 @@
         </style>
     @endSection
     @section('content')
+    <div class="w3-main" style="margin-left:350px;margin-top:43px;" id="addShowroom">
         <!-- Evaluate Content Start -->
             <div class="row table-responsive">
                 <table  role="table" class="table table-hover" id="evaluateTable">
@@ -148,9 +149,10 @@
             </div>
         </div>
         <!-- Evaluate Content Finished -->
+    </div>
 <script>
     $(document).ready(function(){
-        $('#evaluateBtn').addClass('w3-blue');
+        $('.btnValidate').addClass('w3-blue');
     });
 </script>
     @endsection
