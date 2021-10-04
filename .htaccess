@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+
+  # Turn Off mod_dir Redirect For Existing Directories
+  DirectorySlash Off
+
+  # Rewrite For Public Folder
+  RewriteEngine on
+
+  # Redirect Trailing Slashes If Not A Folder...
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [L,R=301]
+
+  # Handle Front Controller...
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php [L]
+  # RewriteRule ^ index.php [L]
+</IfModule>
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^autopoint\.com\.np$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.autopoint\.com\.np$
+RewriteRule ^(.*)$ "https\:\/\/autopoint\.com\.np\/$1" [R=301,L]
